@@ -4,9 +4,9 @@
 
 1. [Insertone](https://www.mongodb.com/docs/manual/reference/method/db.collection.insertOne/) → if you can create a new data or insert new data  in collection then use this function
     1. **Behaviors:**
-        1. Given an Object of documents,`[insertMany()](https://www.mongodb.com/docs/manual/reference/method/db.collection.insertMany/#mongodb-method-db.collection.insertMany)`inserts a single of data into the collection
+        1. Given an Object of documents,[`insertMany()`](https://www.mongodb.com/docs/manual/reference/method/db.collection.insertMany/#mongodb-method-db.collection.insertMany)inserts a single of data into the collection
     2. ****`_id` Field**
-        1. If the document does not specify an [_id](https://www.mongodb.com/docs/manual/reference/glossary/#std-term-_id) field, then `[mongod](https://www.mongodb.com/docs/manual/reference/program/mongod/#mongodb-binary-bin.mongod)` will add the `_id` field and assign a unique `[ObjectId()](https://www.mongodb.com/docs/manual/reference/method/ObjectId/#mongodb-method-ObjectId)` for the document before inserting. Most drivers create an ObjectId and insert the `_id` field, but the `[mongod](https://www.mongodb.com/docs/manual/reference/program/mongod/#mongodb-binary-bin.mongod)` will create and populate the `_id` if the driver or application does not.
+        1. If the document does not specify an [`_id`](https://www.mongodb.com/docs/manual/reference/glossary/#std-term-_id) field, then [`mongod`](https://www.mongodb.com/docs/manual/reference/program/mongod/#mongodb-binary-bin.mongod) will add the `_id` field and assign a unique [`ObjectId()`](https://www.mongodb.com/docs/manual/reference/method/ObjectId/#mongodb-method-ObjectId) for the document before inserting. Most drivers create an ObjectId and insert the `_id` field, but the [`mongod`](https://www.mongodb.com/docs/manual/reference/program/mongod/#mongodb-binary-bin.mongod) will create and populate the `_id` if the driver or application does not.
     3. syntax example:
     
     ```jsx
@@ -29,7 +29,7 @@
     1. Behaviors:
         1. Given an array of documents,`[insertMany()](https://www.mongodb.com/docs/manual/reference/method/db.collection.insertMany/#mongodb-method-db.collection.insertMany)`inserts each document in the array into the collection.
     2. _id **Field**
-        1. If the document does not specify an [_id](https://www.mongodb.com/docs/manual/reference/glossary/#std-term-_id) field, then `[mongod](https://www.mongodb.com/docs/manual/reference/program/mongod/#mongodb-binary-bin.mongod)` adds the `_id` field and assign a unique `[ObjectId()](https://www.mongodb.com/docs/manual/reference/method/ObjectId/#mongodb-method-ObjectId)` for the document. Most drivers create an ObjectId and insert the `_id` field, but the `[mongod](https://www.mongodb.com/docs/manual/reference/program/mongod/#mongodb-binary-bin.mongod)` will create and populate the `_id` if the driver or application does not.
+        1. If the document does not specify an [`_id`](https://www.mongodb.com/docs/manual/reference/glossary/#std-term-_id) field, then [`mongod`](https://www.mongodb.com/docs/manual/reference/program/mongod/#mongodb-binary-bin.mongod) adds the `_id` field and assign a unique [`ObjectId()`](https://www.mongodb.com/docs/manual/reference/method/ObjectId/#mongodb-method-ObjectId) for the document. Most drivers create an ObjectId and insert the `_id` field, but the [`mongod`](https://www.mongodb.com/docs/manual/reference/program/mongod/#mongodb-binary-bin.mongod) will create and populate the `_id` if the driver or application does not.
     3. syntax example:
     
     ```jsx
@@ -98,17 +98,17 @@
     
     | Name | Description |
     | --- | --- |
-    | https://www.mongodb.com/docs/manual/reference/operator/query/eq/#mongodb-query-op.-eq | Matches values that are equal to a specified value. |
-    | https://www.mongodb.com/docs/manual/reference/operator/query/gt/#mongodb-query-op.-gt | Matches values that are greater than a specified value. |
-    | https://www.mongodb.com/docs/manual/reference/operator/query/gte/#mongodb-query-op.-gte | Matches values that are greater than or equal to a specified value. |
-    | https://www.mongodb.com/docs/manual/reference/operator/query/in/#mongodb-query-op.-in | Matches any of the values specified in an array. |
-    | https://www.mongodb.com/docs/manual/reference/operator/query/lt/#mongodb-query-op.-lt | Matches values that are less than a specified value. |
-    | https://www.mongodb.com/docs/manual/reference/operator/query/lte/#mongodb-query-op.-lte | Matches values that are less than or equal to a specified value. |
-    | https://www.mongodb.com/docs/manual/reference/operator/query/ne/#mongodb-query-op.-ne | Matches all values that are not equal to a specified value. |
-    | https://www.mongodb.com/docs/manual/reference/operator/query/nin/#mongodb-query-op.-nin | Matches none of the values specified in an array. |
+    | [$eq](https://www.mongodb.com/docs/manual/reference/operator/query/eq/#mongodb-query-op.-eq) | Matches values that are equal to a specified value. |
+    | [$gt](https://www.mongodb.com/docs/manual/reference/operator/query/gt/#mongodb-query-op.-gt) | Matches values that are greater than a specified value. |
+    | [$gte](https://www.mongodb.com/docs/manual/reference/operator/query/gte/#mongodb-query-op.-gte )| Matches values that are greater than or equal to a specified value. |
+    | [$in](https://www.mongodb.com/docs/manual/reference/operator/query/in/#mongodb-query-op.-in) | Matches any of the values specified in an array. |
+    | [$lt](https://www.mongodb.com/docs/manual/reference/operator/query/lt/#mongodb-query-op.-lt) | Matches values that are less than a specified value. |
+    | [$lte](https://www.mongodb.com/docs/manual/reference/operator/query/lte/#mongodb-query-op.-lte) | Matches values that are less than or equal to a specified value. |
+    | [$ne](https://www.mongodb.com/docs/manual/reference/operator/query/ne/#mongodb-query-op.-ne) | Matches all values that are not equal to a specified value. |
+    | [$nin](https://www.mongodb.com/docs/manual/reference/operator/query/nin/#mongodb-query-op.-nin) | Matches none of the values specified in an array. |
 3. [$in](https://www.mongodb.com/docs/manual/reference/operator/query/in/) or [$nin](https://www.mongodb.com/docs/manual/reference/operator/query/nin/)
     1. $in → The $in operator selects the documents where the value of a field equals any value in the specified array.
-    2. $nin → `[$nin](https://www.mongodb.com/docs/manual/reference/operator/query/nin/#mongodb-query-op.-nin)` selects the documents where:
+    2. $nin → [nin](https://www.mongodb.com/docs/manual/reference/operator/query/nin/#mongodb-query-op.-nin) selects the documents where:
     • the specified field value is not in the specified array **or**
     • the specified field does not exist.
     3. code example:
