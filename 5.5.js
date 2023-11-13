@@ -25,4 +25,4 @@
 
 // using $nor operator
 // its almost similar to $not. $nor is expicit but $not is implicit ,or $nor get array of multi condition , that's the different.
-db.test.find({$nor: [{age: {$gte: 20}}, {gender: 'Female'}]).project({age: 1,gender: 1,name: 1}).sort({age: -1}).limit(20)
+db.test.find({$nor: [{age: {$gte: 20}}, {gender: 'Female'}]}).project({age: 1,gender: 1,name: 1}).sort({age: -1}).limit(20)

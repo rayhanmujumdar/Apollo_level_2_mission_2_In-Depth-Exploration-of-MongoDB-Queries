@@ -8,7 +8,7 @@
 
 
 // $inc operator:
-db.test.updateOne({ _id: ObjectId("6406ad63fc13ae5a40000065"}, {
+db.test.updateOne({ _id: ObjectId("6406ad63fc13ae5a40000065")}, {
     $inc: {
         age: 3 // add to 2 years with existing age fielda
     }
