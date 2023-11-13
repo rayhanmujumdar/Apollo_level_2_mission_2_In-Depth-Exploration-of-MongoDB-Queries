@@ -1,4 +1,4 @@
-# 5.0 - introduction of be a mongoose master
+introduction of be a mongoose master
 
 **Date : 10/11/23**
 
